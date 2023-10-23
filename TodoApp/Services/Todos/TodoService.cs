@@ -34,6 +34,10 @@ namespace TodoApp.API.Services.ToDos
         public async Task<bool> DeleteAsync(int id)
         {
             var result = await _toDoRepository.GetAsync(id);
+
+            if (result == null)
+                return false;
+
             _toDoRepository.Delete(result);
             return await _toDoRepository.SaveAll();
         }
