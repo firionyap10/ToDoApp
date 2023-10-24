@@ -1,7 +1,10 @@
 # ToDoApp
 
-To start this project, you are require to install Microsoft SQL Server Management Studio and also install the database in your machine. After that configure the connectionstring, you can run the project.
+To start this project, you are require to install Microsoft SQL Server Management Studio and also install the database in your machine. After that configure the connection string, you can run the project. 
 
+This application is using .NET Entity Framework and .NET 7, please use Microsoft Visual Studio 2022 -> Tools -> NuGet Package Manager -> Package Manager Console and run this command `update-database`. 
+
+For credential you can refer to Data/Seed.cs
 
 ## Docker
 
